@@ -6,7 +6,7 @@ datasource:
 ssh_pwauth: yes
 users:
   - name: "${ADMIN_NAME}"
-    sudo: ALL=(ALL) NOPASSWD:ALL
+    sudo: "ALL=(ALL) NOPASSWD:ALL"
     shell: /bin/bash
     ssh-authorized-keys:
       - "${ADMIN_SSH_KEY}"
